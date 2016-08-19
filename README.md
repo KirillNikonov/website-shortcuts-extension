@@ -1,0 +1,1 @@
+# Website Shortcuts Chrome extension
