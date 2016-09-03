@@ -1,0 +1,28 @@
+{
+    "name": "Common",
+    "description": "Common shortcuts that could be used at all websites",
+    "isExpanded": false,
+    "shortcuts": [
+        {
+            "name": "Press 'ok' button",
+            "description": "",
+            "binding": {},
+            "context": "",
+            "action": ""
+        },
+        {
+            "name": "Press 'cancel' button",
+            "description": "",
+            "binding": {},
+            "context": "",
+            "action": ""
+        },
+        {
+            "name": "Press 'save' button",
+            "description": "",
+            "binding": {},
+            "context": "",
+            "action": ""
+        }
+    ]
+}

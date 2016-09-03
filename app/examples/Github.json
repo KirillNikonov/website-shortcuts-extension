@@ -1,0 +1,21 @@
+{
+    "name": "Github",
+    "description": "Keyboard shortcuts for Github website.",
+    "isExpanded": false,
+    "shortcuts": [
+        {
+            "name": "Assign current pull request to myself",
+            "description": "",
+            "binding": {},
+            "context": "",
+            "action": ""
+        },
+        {
+            "name": "Switch to profile page",
+            "description": "",
+            "binding": {},
+            "context": "",
+            "action": ""
+        }
+    ]
+}

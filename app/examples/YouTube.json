@@ -1,0 +1,21 @@
+{
+    "name": "YouTube",
+    "description": "Keyboard shortcuts for YouTube website. Quick access to subscriptions, home pages, etc.",
+    "isExpanded": false,
+    "shortcuts": [
+        {
+            "name": "Open subscriptions page",
+            "description": "",
+            "binding": {},
+            "context": "",
+            "action": ""
+        },
+        {
+            "name": "Open home page",
+            "description": "",
+            "binding": {},
+            "context": "",
+            "action": ""
+        }
+    ]
+}
