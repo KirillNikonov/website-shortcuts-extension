@@ -1,0 +1,55 @@
+.panel-heading {
+    cursor: pointer;
+}
+
+.panel-title > a {
+    text-decoration: none;
+}
+
+.options-header {
+    font-size: 33px;
+    text-align: center;
+    padding: 25px;
+}
+
+.vertical-section {
+    float: left;
+    padding: 5px;
+}
+
+.vertical-section.configs-list-section {
+    width: 240px;
+}
+
+.vertical-section.editor-section {
+    float: none;
+    width: auto;
+    overflow: hidden;
+}
+
+.configs-list {}
+
+.shortcuts-list-item {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    font-size: 15px;
+    padding: 5px;
+}
+
+.shortcuts-list-item:hover {
+    background-color: #eeeeee;
+    cursor: pointer;
+}
+
+.editor {
+    padding: 10px;
+    white-space: pre-wrap;
+    background-color: #f9f9f9;
+    min-height: 500px;
+}
+
+.section-title {
+    font-size: 20px;
+    padding: 5px 0px 15px 10px;
+}

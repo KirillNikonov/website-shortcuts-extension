@@ -29,5 +29,6 @@
             ]
         }
     ],
+    "options_page": "views/options.html",
     "short_name": "WS"
 }
