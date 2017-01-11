@@ -5,8 +5,8 @@ function addSampleConfigs(configsPath) {
         configsPath = '/examples/';
 
     var configFiles = [
-        'Common.json',
         'YouTube.json',
+        'Translate.Yandex.json',
         'Github.json'
     ];
 
@@ -18,4 +18,14 @@ function addSampleConfigs(configsPath) {
             chrome.storage.local.set(storageEntry);
         });
     }
+}
+
+// Removes all entries from local storage
+function clearLocalStorage() {
+    chrome.storage.local.clear(function () {
+        var error = chrome.runtime.lastError;
+        if (error) {
+            console.error(error);
+        }
+    });
 }

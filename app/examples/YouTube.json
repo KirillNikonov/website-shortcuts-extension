@@ -4,18 +4,64 @@
     "isExpanded": false,
     "shortcuts": [
         {
-            "name": "Open subscriptions page",
-            "description": "",
-            "binding": {},
-            "context": "",
-            "action": ""
+            "name": "Open home page",
+            "description": "Navigates to home page by clicking on the logo.",
+            "binding": {
+                "altKey": false,
+                "ctrlKey": true,
+                "shiftKey": false,
+                "keyCodes": [
+                    89
+                ]
+            },
+            "context": {
+                "url": "*youtube.com*",
+                "active": "(function () {return $(\"#masthead-search-term\")[0] !== document.activeElement ;})()"
+            },
+            "action": {
+                "apply": "$(\".masthead-logo-renderer-logo\").click()"
+            },
+            "preventDefault": true
         },
         {
-            "name": "Open home page",
-            "description": "",
-            "binding": {},
-            "context": "",
-            "action": ""
+            "name": "Open subscriptions page",
+            "description": "Navigates to subscriptions page by selecting it in the menu (if available).",
+            "binding": {
+                "altKey": false,
+                "ctrlKey": true,
+                "shiftKey": false,
+                "keyCodes": [
+                    83
+                ]
+            },
+            "context": {
+                "url": "*youtube.com*",
+                "active": "(function () {return $(\"#masthead-search-term\")[0] !== document.activeElement;})()"
+            },
+            "action": {
+                "apply": "$(\".guide-my-subscriptions-icon\").click()"
+            },
+            "preventDefault": true
+        },
+        {
+            "name": "Activate search bar",
+            "description": "Activates the search bar.",
+            "binding": {
+                "altKey": false,
+                "ctrlKey": false,
+                "shiftKey": false,
+                "keyCodes": [
+                    9
+                ]
+            },
+            "context": {
+                "url": "*youtube.com*",
+                "active": "(function () {return $(\"#masthead-search-term\")[0] !== document.activeElement;})()"
+            },
+            "action": {
+                "apply": "$(\"#masthead-search-term\").select()"
+            },
+            "preventDefault": false
         }
     ]
 }

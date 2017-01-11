@@ -1,21 +1,27 @@
 {
     "name": "Github",
-    "description": "Keyboard shortcuts for Github website.",
+    "description": "Keyboard shortcuts for Github.",
     "isExpanded": false,
     "shortcuts": [
         {
-            "name": "Assign current pull request to myself",
-            "description": "",
-            "binding": {},
-            "context": "",
-            "action": ""
-        },
-        {
-            "name": "Switch to profile page",
-            "description": "",
-            "binding": {},
-            "context": "",
-            "action": ""
+            "name": "Download repository",
+            "description": "Selects the 'Download ZIP' option when viewing repository's main page.",
+            "binding": {
+                "altKey": false,
+                "ctrlKey": true,
+                "shiftKey": false,
+                "keyCodes": [
+                    83
+                ]
+            },
+            "context": {
+                "url": "*github.com*",
+                "active": "(function () {return $(\".get-repo-select-menu > button\").length > 0;})()"
+            },
+            "action": {
+                "apply": "$(\".get-repo-select-menu > button\").click(); $(\"a:contains('Download')\")[0].click()"
+            },
+            "preventDefault": true
         }
     ]
 }

@@ -1,0 +1,27 @@
+{
+    "name": "Translate.Yandex",
+    "description": "Keyboard shortcuts for Yandex translate.",
+    "isExpanded": false,
+    "shortcuts": [
+        {
+            "name": "Select all text",
+            "description": "Activates text area on the left and selects all text inside it.",
+            "binding": {
+                "altKey": false,
+                "ctrlKey": false,
+                "shiftKey": false,
+                "keyCodes": [
+                    9
+                ]
+            },
+            "context": {
+                "url": "*translate.yandex*",
+                "active": "true"
+            },
+            "action": {
+                "apply": "$(\"#textarea\").select()"
+            },
+            "preventDefault": true
+        }
+    ]
+}
